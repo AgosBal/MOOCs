@@ -36,11 +36,11 @@ El proyecto se divide en las siguientes tareas:
 ## Archivos contenidos en el proyecto
 * Carpeta Datasets: archivos csv de los cuales se obtuvieron los datos para iniciar el proceso de Data Analytics y el archivo csv creado para realizar el dashboard.
 		* Coursera_courses.csv: dataset con los datos de la plataforma Coursera
-		* Coursera_reviews.csv: dataset complementario de la plataforma Coursera
-		* Coursera.csv: dataset que reúne características relevantes y datos limpios de los dos primeros
+		* Coursera.csv: dataset que reúne características relevantes y datos limpios de los dos datasets de coursera
 		* edx_courses.csv: dataset con los datos de la plataforma edX
 		* edx.csv: dataset que reúne características relevantes y datos limpios del csv anterior
 		* udemy_courses.csv: dataset con los datos de la plataforma Udemy
+  		* Aclaración: el segundo dataset de coursera no se carga porque excede el tamaño permitido por GitHub
 * EDA.ipynb: notebook con el procedimiento realizado para el Análisis Exploratorio de Datos. En el mismo hay importadas librerías que utilicé al hacer algunas pruebas y que luego no eliminé. 
 * Dashboard: archivo de PowerBI con el dashboard interactivo
 
