@@ -1,5 +1,121 @@
 ﻿# Henry Labs - Data Anlytics (DA)
 
+## Individual Project: MOOCs
+The objective of the project is to perform a market analysis of online courses using an EDA (Exploratory Data Analysis), generate interactive visualizations and present relevant conclusions based on the data, including the tracking of KPIs that allow to evaluate the company's performance compared to its objectives.
+
+## Description of the problem
+The company's problem in this context is to enter the online course market efficiently and competitively. While there is a high demand in the sector, there is also strong competition among the various platforms and universities offering online courses.
+You need to adjust your business model, courses and content offered to attract and retain as many customers as possible. Therefore, it is essential to understand what factors influence course sales. In this case, the specific problem is to analyze and determine the influence of price, language, level and rating of the courses on the demand for the product sold.
+In addition, the objective is to increase the conversion rate from free to paid enrollees by 15% compared to the previous year. To achieve this, a thorough analysis of the data and the identification of effective strategies to increase conversion is required.
+
+In summary, the company's problem is to compete in the online course market effectively by adjusting its offerings and business strategies based on data analysis and understanding the factors that influence sales and user conversion.
+
+## Work proposal
+The project is divided into the following tasks:
+
+ 1. DATA COLLECTION AND EXPLORATION: Obtain datasets of competitors in the online course market, including relevant information such as price, language, level, rating and sales data. Perform an exploratory analysis of the data to understand its structure, quality and characteristics.
+    
+2. SALES SEGMENTATION: Perform a sales segmentation analysis based on the variables available in the datasets. Group courses according to price, language, level and rating, and analyze how they relate to sales. Use visualizations and descriptive metrics to identify patterns and trends.
+    
+3.  VARIABLES INFLUENCE ANALYSIS: Evaluate the influence of variables (price, language, level, rating) on course demand. Use statistical techniques such as correlation analysis, hypothesis testing or other predictive models to determine the relationship between variables and sales.
+    
+4.  CREATE A WORD CLOUD: Process course titles and generate a Word Cloud showing the most frequent keywords. This will identify popular topics and relevant approaches to course offerings.
+    
+5.  ESTABLISH KPIs: Define a set of Key Performance Indicators (KPIs) related to course demand and conversion. One of the proposed KPIs is the conversion rate from free to paid subscribers.Look for complementary datasets and evaluate this KPI on the different platforms to get a broader view.
+
+6.  DASHBOARD DEVELOPMENT: Create an interactive dashboard showing the data, visualizations and analysis obtained.The dashboard should include filters and selection options to explore the data in detail.Design a clear and coherent presentation of the information, using relevant graphics and an aesthetic layout that facilitates the interpretation of the data.
+
+7.ANALYSIS AND CONCLUSIONS: Perform an in-depth analysis of the data and visualizations obtained.Draw relevant conclusions about the influence of variables on sales, identify interesting patterns and propose strategies to increase user conversion. Present the results in a detailed report and interactive dashboard.
+    
+8.  ADDITIONAL CHALLENGES (optional): As an additional challenge, it is suggested to perform data crosswalks with complementary datasets to obtain additional information or compare performance on different platforms. The creation of a database in a SQL engine and the execution of Python scripts in the selected visualization tool can also be considered.
+    
+9.  DOCUMENTATION AND FINAL PRESENTATION: Prepare a GitHub repository containing a Readme with an overview of the project, the file structure and an analysis report based on the dashboard and suggested KPIs. 
+
+10. PRESENTATION: Prepare a presentation of no more than 10 minutes that includes a demonstration of the dashboard and a presentation of the analysis and conclusions made.
+
+## Files contained in the project
+* Datasets folder: csv files from which the data were obtained to start the Data Analytics process and the csv file created to create the dashboard.
+		* Coursera_courses.csv: dataset with data from the Coursera platform.
+		* Coursera.csv: dataset that gathers relevant characteristics and clean data from the two Coursera datasets.
+		* edx_courses.csv: dataset with data from the edX platform
+		* edx.csv: dataset that gathers relevant features and clean data from the previous csv
+		* udemy_courses.csv: dataset with data from the Udemy platform.
+  		* Note: the second coursera dataset is not loaded because it exceeds the size allowed by GitHub.
+* EDA.ipynb: notebook with the procedure performed for the Exploratory Data Analysis. In it there are imported libraries that I used when doing some tests and that I did not remove later. 
+* Dashboard: PowerBI file with the interactive dashboard.
+
+
+## Analysis report
+* Dashboard analysis
+* KPI analysis and functionality
+
+From the EDA analysis performed on the 3 datasets provided, I obtained the following conclusions:
+
+*Udemy
+* The number of enrollees increased overall until 2015 and started to decline until 2020, where it increased again. These declines may be due to several reasons, which I infer as hypotheses, among them:
+	- Changes in the supply of courses, both in quantity or types. 
+    - Changes in the marketing strategies used to promote the courses.
+    - Economic changes, such as the general economic situation or the availability of students' financial resources.
+    - Competencia en el mercado de cursos en línea, que posee alta competencia, por lo que, si los estudiantes tuvieron más opciones disponibles en el mercado pueden optar por cursos de otros proveedores
+    - Competition in the market of online courses, which has high competition, so if students had more options available in the market they can opt for courses from other providers.
+* The most popular course is free, for all levels, lasts approximately 10 hours, is within the subject Web Development and was taught in 2013. Of those that follow 50% are free and 50% paid, 70% are for all levels, last on average 13 hours approximately, 80% are within the category. Web Development and 20% in Musical Instruments, are almost equally distributed between the years 2013, 2014 and 2015. On the other hand, the least popular courses are all paid 20% are for all levels, 40% beginner level and the remaining 40% intermediate level. the topic that generates less subscribers is Business Finance.
+* In terms of duration in relation to the levels, those that are for all levels have the longest average duration of approximately 5 hours.
+* The majority of subscribers are between the highest price and the free courses. Unlike those who leave reviews who are mostly those who paid the highest price But it is not a very high correlation.
+* The subjects with the most courses are 'Business Finance' and 'Web Development'. The enrolments are mostly distributed within these two categories, followed by Musical Instruments and Graphic Design.
+* The maximum price paid for courses in any of the subjects is $200. The most expensive average is Web Development at $77, followed by Business Finance at $69.
+* Business Finance is the subject with the highest number of enrolments, 696. The most common course level in this topic is "All Levels", followed by "Beginner Level" and "Intermediate Level". There are a limited number of registrants at the "Expert Level" level. Graphic Design is the second most common subject, with 298 total registrants. As in Business Finance, the most common course level in Graphic Design is "All Levels". However, there is also a significant proportion of courses at "Beginner Level" and "Intermediate Level". Musical Instruments has 276 total enrolments, and again, "All Levels" is the most common course level in this subject. There are also a considerable number of courses at "Beginner Level" and "Intermediate Level". Web Development is the subject with the smallest number of courses, with 659 courses in total. The most common course level in this topic is "All Levels", followed by "Beginner Level" and "Intermediate Level". There are a very limited number of courses at the Expert Level.
+* Web Development courses tend to have higher prices compared to the other topics, and also have a higher average number of subscribers. On the other hand, Musical Instruments courses have lower prices and a lower average number of subscribers compared to the other topics. These differences may reflect the demand and perceived value of the courses in each topic.
+* At Udemy they held the same subjects between 2012 and 2017, but in different amounts of courses. For example, between 2015 and 2017, they reduced the number by 1014.
+* A significant increase in the number of enrollees is observed from 2011 to 2015, with a peak of enrollees in 2015. From 2016 onwards, a decrease in the number of enrollees is observed. 
+* Distribution of subscribers by topic:
+	- "Web Development" topic has the highest number of subscribers in all years.
+	* "Business Finance" and "Graphic Design" also show a significant number of subscribers, although to a lesser extent.
+	* "Musical Instruments" has the least amount of subscribers compared to other topics.
+* General trends:
+	* "Web Development" shows a steady growth in the number of subscribers over the years.
+	* "Business Finance" and "Graphic Design" had an initial increase in subscribers, followed by some stabilization or decline in later years.
+	* "Musical Instruments" experienced initial growth, but its number of subscribers has remained relatively stable or declined in recent years.
+
+*Coursera*
+* The popularity of MOOCs grew from 2020 onwards.
+* There may be students who have taken several courses, as their names/users are repeated.
+* Reviewing the review cells, there are comments that are exactly the same. For example 'great course'.
+* The coursera courses have majority rating = 5.
+* The months when most people start courses are between April and September, i.e. the second to third quarter.
+* There are 1431064 duplicate reviewers, which may imply that one person left reviews on more than 1 course. According to research on the internet, a person can leave a comment/review on a Coursera course without necessarily having completed the course, but must have enrolled. 
+* As for the comments, there are 1411528 duplicates. For example 'Great course'. But I decide not to remove the duplicates and also not to remove the missing ones from this variable, as they may be rows that are useful for another analysis. 
+* According to the categorization made with the course ids, there is no relationship between them and the rating, since they all have a higher frequency of rating = 5. 
+* The number of reviews for each id is directly proportional to the number of courses within each category.
+* In most courses the titles consist of: Introduction, Management, Programming, Fundamental, Machine Learning, Data, Design, Data Science, Python, business, Understanding, International, Excel.
+* While, taking into account that the total list of titles has to do with the number of registrants who left their reviews, the most predominant words are: Machine Learning, Data Science, Neural Networks, Python Programming, Getting Started, Deep Learning, Google CloudLearning Machine.
+* The top 10 courses with the best rating differ from the number of enrollees. There is no relationship, therefore, between the rating and the number of enrollees.
+
+*edX*
+* There is no information about whether there were registrants who paid for the verified certification of the courses that have them. 
+* From the Word Clouds of 'summary' of the courses with enrolments vs. courses without enrolments, it is obtained that the words that the courses of the second category have and not the first are: 'concept', 'language', 'project', 'build' and on the other hand the first has: 'Explore', 'business', 'use', 'design', 'world', 'basic', 'system', 'using', 'skill', 'skill', 'system', 'using', 'skill', 'basic', 'system', 'system', 'using', 'skill', 'skill', 'skill', 'skill', 'skill', 'skill', 'skill', 'skill', 'skill', 'skill'.
+* There is no correlation between the length of the descriptions and the number of registrants.
+* Whether courses have enrolments or not does not depend on whether the course has a description or not.
+* The number of enrollees has a very weak correlation with the price of certificates, it is not significant.
+* 95% of enrollees enrolled in self-paced courses.
+* Harvard University has the largest number of enrollees, and as in Coursera, the largest number of enrollees is not only in courses taught by universities.
+* The subjects with the most enrolments are: Computer Science, Business & Management, Communication, Data Analytics & Statistics, Humanities, Biology & Life Sciences, Engineering, Language, Medicine.
+* The predominant language, both in the original language and in the subtitles, at the time of registration is English, followed by Spanish.
+* From the chi-square analysis, it is inferred that there is a significant association between the original language, subtitles and the number of course enrollments. It also makes a significant difference if the courses have subtitles.
+* Although there is a weak positive correlation between the minimum and maximum weekly course hours and the number of students enrolled, it does not seem to be a determining factor in the number of people who enroll in the courses.
+* The correlation coefficient between the duration of the courses and the number of enrolments is weak.  
+
+Analyzing the KPIs and their functionality, I conclude that:
+* Conversion rate: this KPI gives a value of the number of people who entered the courses for free vs. those who enrolled in the paid courses. The value indicates that on average 2.89 conversions are made, i.e. 2.89 paid enrollees are obtained for each free enrollee. With this indicator you can measure the company's progress towards its goal of increasing the conversion rate by 15% in one year. 
+
+In addition, I suggest using the following KPIs:
+* Average Rating per Month and Year: I propose to obtain this KPI to calculate the average rating (rating: from 1 to 5) in relation to the months and years in which they were delivered to evaluate the quality offered to students in different periods of time. 
+* Average number of units per course: it is useful to understand the structure and content of the courses, in terms of length and depth of content. For the company it will also be useful to have a comparison with courses offered by other competitors, to plan the necessary study time and to design and structure new courses, adjusting the value according to the objectives. 
+* Proportion/Ratio of courses with subtitles: I suggest performing this performance measurement since it allows covering a larger market of people, offers an inclusive learning experience (example: preferences for learning by reading and not listening), shows that the company is interested in these situations, allows extending the reach to other areas, comparing its own offer with that of other platforms, if effort is put in implementing subtitles, it can be perceived how the quality of the course is. 
+
+-----------------------------------------------------------------------------------------------------
+ 
+ # Henry Labs - Data Anlytics (DA)
+
 ## Proyecto Individual: MOOCs
 El objetivo del proyecto es realizar un análisis de mercado de cursos online mediante un EDA (Análisis Exploratorio de Datos), generar visualizaciones interactivas y presentar conclusiones relevantes basadas en los datos, incluyendo el seguimiento de KPIs que permitan evaluar el rendimiento de la empresa en comparación con sus objetivos.
 
@@ -63,7 +179,6 @@ A partir del análisis EDA realizado en los 3 datasets proporcionados, obtuve la
 * Los temas con mayoría de cursos son 'Business Finance' y 'Web Development'. Los inscritpos se distribuyen dentro de esas dos categorías mayoritariamente, seguidos por Musical Instruments y Graphic Design
 * El precio máximo que se paga por cursos en cualquiera de los temas, es $200. El promedio más caro se lo lleva Web Development con $77, seguido de Business Finance con $69
 * Business Finance es el tema con la mayor cantidad de inscriptos, 696. El nivel de cursos más común en este tema es "All Levels", seguido de "Beginner Level" y "Intermediate Level". Hay un número limitado de inscriptos en el nivel "Expert Level". Graphic Design es el segundo tema más común, con 298 inscriptos en total. Al igual que en Business Finance, el nivel de cursos más común en Graphic Design es "All Levels". Sin embargo, también hay una proporción significativa de cursos en "Beginner Level" y "Intermediate Level". Musical Instruments tiene 276 inscriptos en total, y nuevamente, "All Levels" es el nivel de cursos más común en este tema. También hay una cantidad considerable de cursos en "Beginner Level" e "Intermediate Level". Web Development es el tema con la menor cantidad de cursos, con 659 cursos en total. El nivel de cursos más común en este tema es "All Levels", seguido de "Beginner Level" y "Intermediate Level". Hay un número muy limitado de cursos en el nivel "Expert Level".
-* Los cursos de Web Development tienden a tener precios más altos en comparación con los otros temas, y también tienen un mayor número promedio de suscriptores. Por otro lado, los cursos de Musical Instruments tienen precios más bajos y un número promedio de suscriptores menor en comparación con los otros temas. Estas diferencias pueden reflejar la demanda y el valor percibido de los cursos en cada tema.
 * Los cursos de Web Development tienden a tener una duración de contenido más larga en comparación con los otros temas, y también tienen un mayor número promedio de suscriptores. Por otro lado, los cursos de Musical Instruments tienen una duración de contenido más corta y un número promedio de suscriptores menor en comparación con los otros temas. Estas diferencias pueden reflejar las preferencias de los estudiantes en términos de la duración del contenido y la temática de los cursos.
 * En Udemy sostuvieron los mismos subjects entre el año 2012 y 2017, pero en distintas cantidades de cursos. Por ejemplo, entre 2015 y 2017, redujeron en 1014 la cantidad.
 * Se observa un aumento significativo en la cantidad de inscritos desde el año 2011 hasta el año 2015, con un pico de inscritos en 2015. A partir de 2016, se observa una disminución en el número de inscritos. 
@@ -110,4 +225,4 @@ Analizando los KPI y su funcionalidad, concluyo que:
 Además sugiero utilizar los siguientes KPIs:
 * Promedio de Calificación por Mes y Año: propongo obtener este KPI para calcular el promedio de calificación (rating: del 1 al 5) en relación a los meses y años en los que se dictaron para evaluar la calidad ofrecida a los estudiantes en diferentes períodos de tiempo. 
 * Promedio de unidades por curso: es útil para comprender la estructura y el contenido de los cursos, en cuanto a extensión y profundidad del contenido. Para la empresa además será útil para tener una comparativa frente a los cursos que dictan otros competidores, para planificar los tiempos de estudio necesarios y para diseñar y estructurar nuevos cursos, ajustando el valor de acuerdo a los objetivos. 
-* Proporción/Ratio de cursos con subtítulos: sugiero realizar esta medición de performance ya que permite abarcar un mercado mayor de personas, ofrece una experiencia de aprendizaje inclusiva (ejemplo: preferencias por aprender leyendo y no escuchando), demuestra que la empresa tiene interés por estas situaciones, permite ampliar el alcance a otras zonas, comparar la oferta propia con la de otras plataformas, si se pone esfuerzo en implementar los subtítulos se puede percibir cómo calidad del curso. 
+* Proporción/Ratio de cursos con subtítulos: sugiero realizar esta medición de performance ya que permite abarcar un mercado mayor de personas, ofrece una experiencia de aprendizaje inclusiva (ejemplo: preferencias por aprender leyendo y no escuchando), demuestra que la empresa tiene interés por estas situaciones, permite ampliar el alcance a otras zonas, comparar la oferta propia con la de otras plataformas, si se pone esfuerzo en implementar los subtítulos se puede percibir cómo calidad del curso.  
