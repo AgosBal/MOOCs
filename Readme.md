@@ -1,4 +1,4 @@
-﻿# Henry Labs - Data Anlytics (DA)
+﻿# Data Anlytics - Data Visualization
 
 ## Individual Project: MOOCs
 The objective of the project is to perform a market analysis of online courses using an EDA (Exploratory Data Analysis), generate interactive visualizations and present relevant conclusions based on the data, including the tracking of KPIs that allow to evaluate the company's performance compared to its objectives.
@@ -114,7 +114,7 @@ In addition, I suggest using the following KPIs:
 
 -----------------------------------------------------------------------------------------------------
  
- # Henry Labs - Data Anlytics (DA)
+# Data Analytics - Data Visualization
 
 ## Proyecto Individual: MOOCs
 El objetivo del proyecto es realizar un análisis de mercado de cursos online mediante un EDA (Análisis Exploratorio de Datos), generar visualizaciones interactivas y presentar conclusiones relevantes basadas en los datos, incluyendo el seguimiento de KPIs que permitan evaluar el rendimiento de la empresa en comparación con sus objetivos.
